@@ -13,7 +13,7 @@ class wr_gen;
                end
 
                "EMPTY": begin
-
+                       writes(`FIFO_SIZE); 
                end
 
                "OVERFLOW": begin
@@ -35,8 +35,7 @@ class wr_gen;
 task writes(input int N);
 
 
-    repeat(N)begin;
-         $display("Starting %0d writes", N);
+    repeat(N)begin
          tx=new();
          tx.randomize();
          fifo_common::wr_gen2bfm.put(tx);

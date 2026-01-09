@@ -8,7 +8,7 @@ class wr_tx;
         function void print(input string str="wr_tx");
                 $display("---------------%0s-----------------",str);
                 $display("wr_en = %b",wr_en);
-                $display("wdata  = %b",wdata);
+                $display("wdata  = %d",wdata);
                 $display("full = %b",full);
                 $display("overflow = %b",overflow);
         endfunction
