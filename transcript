@@ -14,381 +14,34 @@
 # // and may not be used in any way not expressly authorized by SISW.
 # //
 # do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:33:01 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# ** Error: ** while parsing file included at list.svh(4)
-# ** at wr_gen.sv(40): (vlog-2730) Undefined variable: 'tx'.
-# End time: 12:33:02 on Jan 09,2026, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 2
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog list.svh"
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:33:35 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# ** Error: ** while parsing file included at list.svh(4)
-# ** at wr_gen.sv(40): (vlog-2730) Undefined variable: 'tx'.
-# End time: 12:33:35 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 2
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog list.svh"
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:34:15 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# ** Error: ** while parsing file included at list.svh(4)
-# ** at wr_gen.sv(40): (vlog-2730) Undefined variable: 'tx'.
-# End time: 12:34:15 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 2
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog list.svh"
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:36:37 on Jan 09,2026
+# Start time: 13:53:12 on Jan 09,2026
 # vlog -reportprogress 300 list.svh 
 # -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: wr_gen.sv(41): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # -- Compiling module tb
+# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
 # 
 # Top level modules:
 # 	tb
-# End time: 12:36:38 on Jan 09,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-# vsim -novopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:36:38 on Jan 09,2026
-# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/krish/OneDrive/Desktop/Asynch_Fiffo/work.tb
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/krish/OneDrive/Desktop/Asynch_Fiffo/work.list_svh_unit
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading sv_std.std
-# Loading work.list_svh_unit
-# Loading work.tb
-# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$valueplusargs' is not defined.
-#    Time: 0 ns  Iteration: 0  Instance: /tb File: fifo_tb.sv Line: 6
-# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$valueplusargs'
-#    Time: 0 ns  Iteration: 0  Process: /tb/#INITIAL#5 File: fifo_tb.sv Line: 6
-# FIFO_ENV is happening
-# WR_AGENT is happening
-# ** Error (suppressible): (vsim-12457) A mailbox method 'get/try_get' is called on NULL mailbox.
-# 
-#    Time: 0 ns  Iteration: 0  Process: /list_svh_unit::wr_agent::run/#FORK#17_7ff4f5f2fa5 File: C:/questasim64_2024.1/win64/../verilog_src/std/std.sv Line: 41
-# ---------------wr-bfm-----------------
-# ** Fatal: (SIGSEGV) Bad handle or reference.
-#    Time: 0 ns  Iteration: 0  Process: /list_svh_unit::wr_agent::run/#FORK#17_7ff4f5f2fa5 File: wr_tx.sv
-# Fatal error in Function list_svh_unit/wr_tx::print at wr_tx.sv line 10
-# 
-# HDL call sequence:
-# Stopped at wr_tx.sv 10 Function list_svh_unit/wr_tx::print
-# called from  wr_bfm.sv 9 Task list_svh_unit/wr_bfm::run
-# called from  wr_agent.sv 17 Task list_svh_unit/wr_agent::run
-# 
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:37:19 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# -- Compiling module tb
-# 
-# Top level modules:
-# 	tb
-# End time: 12:37:20 on Jan 09,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-# End time: 12:37:21 on Jan 09,2026, Elapsed time: 0:00:43
-# Errors: 3, Warnings: 2
-# vsim -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:37:21 on Jan 09,2026
+# End time: 13:53:12 on Jan 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
+# Start time: 13:53:12 on Jan 09,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
 # Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.list_svh_unit(fast)
-# Loading work.tb(fast)
-# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$valueplusargs' is not defined.
-#    Time: 0 ns  Iteration: 0  Instance: /tb File: fifo_tb.sv Line: 6
-# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$valueplusargs'
-#    Time: 0 ns  Iteration: 0  Process: /tb/#INITIAL#5 File: fifo_tb.sv Line: 6
-# FIFO_ENV is happening
-# WR_AGENT is happening
-# ** Error (suppressible): (vsim-12457) A mailbox method 'get/try_get' is called on NULL mailbox.
-# 
-#    Time: 0 ns  Iteration: 0  Process: /list_svh_unit::wr_agent::run/#FORK#17_7ff4f5f2efb File: C:/questasim64_2024.1/win64/../verilog_src/std/std.sv Line: 41
-# ---------------wr-bfm-----------------
-# ** Fatal: (SIGSEGV) Bad handle or reference.
-#    Time: 0 ns  Iteration: 0  Process: /list_svh_unit::wr_agent::run/#FORK#17_7ff4f5f2efb File: wr_tx.sv
-# Fatal error in Function list_svh_unit/wr_tx::print at wr_tx.sv line 10
-# 
-# HDL call sequence:
-# Stopped at wr_tx.sv 10 Function list_svh_unit/wr_tx::print
-# called from  wr_bfm.sv 9 Task list_svh_unit/wr_bfm::run
-# called from  wr_agent.sv 17 Task list_svh_unit/wr_agent::run
-# 
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:37:46 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# -- Compiling module tb
-# 
-# Top level modules:
-# 	tb
-# End time: 12:37:46 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 12:37:47 on Jan 09,2026, Elapsed time: 0:00:26
-# Errors: 3, Warnings: 2
-# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:37:47 on Jan 09,2026
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading sv_std.std
-# Loading work.list_svh_unit(fast)
-# Loading work.tb(fast)
-# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$valueplusargs' is not defined.
-#    Time: 0 ns  Iteration: 0  Instance: /tb File: fifo_tb.sv Line: 6
-# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$valueplusargs'
-#    Time: 0 ns  Iteration: 0  Process: /tb/#INITIAL#5 File: fifo_tb.sv Line: 6
-# FIFO_ENV is happening
-# WR_AGENT is happening
-# ** Error (suppressible): (vsim-12457) A mailbox method 'get/try_get' is called on NULL mailbox.
-# 
-#    Time: 0 ns  Iteration: 0  Process: /list_svh_unit::wr_agent::run/#FORK#17_7ff4f5f2efb File: C:/questasim64_2024.1/win64/../verilog_src/std/std.sv Line: 41
-# ---------------wr-bfm-----------------
-# ** Fatal: (SIGSEGV) Bad handle or reference.
-#    Time: 0 ns  Iteration: 0  Process: /list_svh_unit::wr_agent::run/#FORK#17_7ff4f5f2efb File: wr_tx.sv
-# Fatal error in Function list_svh_unit/wr_tx::print at wr_tx.sv line 10
-# 
-# HDL call sequence:
-# Stopped at wr_tx.sv 10 Function list_svh_unit/wr_tx::print
-# called from  wr_bfm.sv 9 Task list_svh_unit/wr_bfm::run
-# called from  wr_agent.sv 17 Task list_svh_unit/wr_agent::run
-# 
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:39:51 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# -- Compiling module tb
-# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# 
-# Top level modules:
-# 	tb
-# End time: 12:39:51 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# End time: 12:39:53 on Jan 09,2026, Elapsed time: 0:02:06
-# Errors: 3, Warnings: 1
-# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:39:53 on Jan 09,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.list_svh_unit(fast)
-# Loading work.tb(fast)
-# FIFO_ENV is happening
-# WR_AGENT is happening
-# ** Error (suppressible): (vsim-12457) A mailbox method 'get/try_get' is called on NULL mailbox.
-# 
-#    Time: 0 ns  Iteration: 0  Process: /list_svh_unit::wr_agent::run/#FORK#17_7ff4f5f2ee5 File: C:/questasim64_2024.1/win64/../verilog_src/std/std.sv Line: 41
-# ---------------wr-bfm-----------------
-# ** Fatal: (SIGSEGV) Bad handle or reference.
-#    Time: 0 ns  Iteration: 0  Process: /list_svh_unit::wr_agent::run/#FORK#17_7ff4f5f2ee5 File: wr_tx.sv
-# Fatal error in Function list_svh_unit/wr_tx::print at wr_tx.sv line 10
-# 
-# HDL call sequence:
-# Stopped at wr_tx.sv 10 Function list_svh_unit/wr_tx::print
-# called from  wr_bfm.sv 9 Task list_svh_unit/wr_bfm::run
-# called from  wr_agent.sv 17 Task list_svh_unit/wr_agent::run
-# 
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:43:10 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# -- Compiling module tb
-# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# 
-# Top level modules:
-# 	tb
-# End time: 12:43:10 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# End time: 12:43:11 on Jan 09,2026, Elapsed time: 0:03:18
-# Errors: 2, Warnings: 1
-# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:43:11 on Jan 09,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: wr_gen.sv(41): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # Loading sv_std.std
 # Loading work.list_svh_unit(fast)
 # Loading work.tb(fast)
-# FIFO_ENV is happening
-# WR_AGENT is happening
-# WR_MON is happening
-# WR_COV is happening
-# RD_AGENT is happening
-# RD_TX is happening
-# rd_BFM is happening
-# rd_MON is happening
-# rd_COV is happening
-# FIFO_SBD is happening
 do run.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:46:53 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# -- Compiling module tb
-# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# 
-# Top level modules:
-# 	tb
-# End time: 12:46:53 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# End time: 12:46:54 on Jan 09,2026, Elapsed time: 0:03:43
-# Errors: 0, Warnings: 2
-# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:46:55 on Jan 09,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading sv_std.std
-# Loading work.list_svh_unit(fast)
-# Loading work.tb(fast)
-# WR_AGENT is happening
-# RD_TX is happening
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:47:47 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# -- Compiling module tb
-# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# 
-# Top level modules:
-# 	tb
-# End time: 12:47:47 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# End time: 12:47:48 on Jan 09,2026, Elapsed time: 0:00:53
-# Errors: 0, Warnings: 2
-# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:47:48 on Jan 09,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading sv_std.std
-# Loading work.list_svh_unit(fast)
-# Loading work.tb(fast)
-# RD_TX is happening
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:55:33 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# -- Compiling module tb
-# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# 
-# Top level modules:
-# 	tb
-# End time: 12:55:33 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# End time: 12:55:35 on Jan 09,2026, Elapsed time: 0:07:47
-# Errors: 0, Warnings: 2
-# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:55:35 on Jan 09,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading sv_std.std
-# Loading work.list_svh_unit(fast)
-# Loading work.tb(fast)
-# RD_TX is happening
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 12:59:46 on Jan 09,2026
-# vlog -reportprogress 300 list.svh 
-# -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# -- Compiling module tb
-# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# 
-# Top level modules:
-# 	tb
-# End time: 12:59:46 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# End time: 12:59:48 on Jan 09,2026, Elapsed time: 0:04:13
-# Errors: 0, Warnings: 2
-# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 12:59:48 on Jan 09,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading sv_std.std
-# Loading work.list_svh_unit(fast)
-# Loading work.tb(fast)
-# RD_TX is happening
-do run.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 13:01:05 on Jan 09,2026
+# Start time: 13:55:06 on Jan 09,2026
 # vlog -reportprogress 300 list.svh 
 # -- Compiling package list_svh_unit
 # ** Warning: wr_gen.sv(41): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
@@ -397,47 +50,822 @@ do run.do
 # 
 # Top level modules:
 # 	tb
-# End time: 13:01:05 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 13:55:06 on Jan 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 2
-# End time: 13:01:06 on Jan 09,2026, Elapsed time: 0:01:18
+# End time: 13:55:08 on Jan 09,2026, Elapsed time: 0:01:56
 # Errors: 0, Warnings: 2
 # vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 13:01:06 on Jan 09,2026
+# Start time: 13:55:08 on Jan 09,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
 # Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: wr_gen.sv(41): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
 # Loading work.list_svh_unit(fast)
 # Loading work.tb(fast)
-# RD_TX is happening
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 10001110
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 00100100
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 11000011
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 11000100
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01110111
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01010011
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01100010
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01001111
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 11001111
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 00010111
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 10101000
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01011000
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 00110111
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 10100001
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01011111
+# full = 0
+# overflow = 0
+# Starting 16 writes
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 11110010
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 10001110
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 00100100
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 11000011
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 11000100
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01110111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01010011
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01100010
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01001111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 11001111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 00010111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 10101000
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01011000
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 00110111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 10100001
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01011111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 11110010
+# full = 0
+# overflow = 0
 do run.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 13:03:09 on Jan 09,2026
+# Start time: 13:57:25 on Jan 09,2026
 # vlog -reportprogress 300 list.svh 
 # -- Compiling package list_svh_unit
-# ** Warning: wr_gen.sv(41): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # -- Compiling module tb
 # ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
 # 
 # Top level modules:
 # 	tb
-# End time: 13:03:09 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 13:57:25 on Jan 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 2
-# End time: 13:03:10 on Jan 09,2026, Elapsed time: 0:02:04
-# Errors: 0, Warnings: 2
+# End time: 13:57:26 on Jan 09,2026, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 1
 # vsim -vopt -suppress 12110 tb "+test_name=FULL" 
-# Start time: 13:03:10 on Jan 09,2026
+# Start time: 13:57:26 on Jan 09,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
 # Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: wr_gen.sv(41): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # Loading sv_std.std
 # Loading work.list_svh_unit(fast)
 # Loading work.tb(fast)
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 10001110
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 00100100
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 11000011
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 11000100
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01110111
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01010011
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01100010
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01001111
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 11001111
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 00010111
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 10101000
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01011000
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 00110111
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 10100001
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 01011111
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 11110010
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 10001110
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 00100100
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 11000011
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 11000100
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01110111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01010011
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01100010
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01001111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 11001111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 00010111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 10101000
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01011000
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 00110111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 10100001
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 01011111
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 11110010
+# full = 0
+# overflow = 0
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 13:57:47 on Jan 09,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling package list_svh_unit
+# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module tb
+# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+# 
+# Top level modules:
+# 	tb
+# End time: 13:57:47 on Jan 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 13:57:48 on Jan 09,2026, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 2
+# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
+# Start time: 13:57:48 on Jan 09,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.tb(fast)
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 142
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  36
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 195
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 196
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 119
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  83
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  98
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  79
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 207
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  23
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 168
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  88
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  55
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 161
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  95
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 242
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 142
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  36
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 195
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 196
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 119
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  83
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  98
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  79
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 207
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  23
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 168
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  88
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  55
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 161
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  95
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 242
+# full = 0
+# overflow = 0
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 14:15:03 on Jan 09,2026
+# vlog -reportprogress 300 list.svh 
+# ** Error: (vlog-13069) ** while parsing file included at list.svh(11)
+# ** at rd_gen.sv(41): near "endclass": syntax error, unexpected endclass.
+# ** Error: ** while parsing file included at list.svh(12)
+# ** at rd_bfm.sv(5): Illegal declaration after the statement near line '1'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: (vlog-13069) ** while parsing file included at list.svh(12)
+# ** at rd_bfm.sv(14): near "endtask": syntax error, unexpected endtask.
+# ** Error (suppressible): ** while parsing file included at list.svh(13)
+# ** at rd_mon.sv(3): (vlog-2388) 'tx' already declared in this scope (#ublk#267133908#34) at rd_bfm.sv(3).
+# ** Error: ** while parsing file included at list.svh(13)
+# ** at rd_mon.sv(3): (vlog-13311) 'tx' already declared in this scope ('#ublk#267133908#34') with a type.
+# ** Error: ** while parsing file included at list.svh(13)
+# ** at rd_mon.sv(5): Illegal declaration after the statement near line '1'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error (suppressible): ** while parsing file included at list.svh(14)
+# ** at rd_cov.sv(3): (vlog-2388) 'tx' already declared in this scope (#ublk#267133908#34) at rd_mon.sv(3).
+# ** Error: ** while parsing file included at list.svh(14)
+# ** at rd_cov.sv(5): Illegal declaration after the statement near line '1'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ** while parsing file included at list.svh(15)
+# ** at rd_agent.sv(4): Illegal declaration after the statement near line '1'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: (vlog-13069) ** while parsing file included at list.svh(15)
+# ** at rd_agent.sv(5): near ";": syntax error, unexpected ';', expecting '('.
+# ** Error: (vlog-13069) ** while parsing file included at list.svh(15)
+# ** at rd_agent.sv(6): near ";": syntax error, unexpected ';', expecting '('.
+# ** Error: ** while parsing file included at list.svh(15)
+# ** at rd_agent.sv(11): (vlog-2730) Undefined variable: 'bfm'.
+# ** Error: ** while parsing file included at list.svh(15)
+# ** at rd_agent.sv(12): (vlog-2730) Undefined variable: 'mon'.
+# ** Error: ** while parsing file included at list.svh(15)
+# ** at rd_agent.sv(13): (vlog-2730) Undefined variable: 'cov'.
+# ** Error: (vlog-13069) ** while parsing file included at list.svh(15)
+# ** at rd_agent.sv(22): near "endtask": syntax error, unexpected endtask.
+# ** Error: ** while parsing file included at list.svh(17)
+# ** at fifo_sbd.sv(6): Illegal declaration after the statement near line '1'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ** while parsing file included at list.svh(18)
+# ** at fifo_env.sv(4): Illegal declaration after the statement near line '1'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: (vlog-13069) ** while parsing file included at list.svh(18)
+# ** at fifo_env.sv(5): near ";": syntax error, unexpected ';', expecting '('.
+# ** Error: ** while parsing file included at list.svh(18)
+# ** at fifo_env.sv(10): (vlog-2730) Undefined variable: 'r_agent'.
+# ** Error: ** while parsing file included at list.svh(18)
+# ** at fifo_env.sv(11): (vlog-2730) Undefined variable: 'sbd'.
+# ** Error: (vlog-13069) ** while parsing file included at list.svh(18)
+# ** at fifo_env.sv(18): near "endtask": syntax error, unexpected endtask.
+# ** Error: (vlog-13069) ** while parsing file included at list.svh(19)
+# ** at fifo_tb.sv(3): near ";": syntax error, unexpected ';', expecting '('.
+# ** Error: ** while parsing file included at list.svh(19)
+# ** at fifo_tb.sv(7): (vlog-2730) Undefined variable: 'env'.
+# ** Error: ** while parsing file included at list.svh(19)
+# ** at fifo_tb.sv(7): Illegal use of 'automatic' for variable declaration (env).
+# ** while parsing file included at list.svh(19)
+# ** at fifo_tb.sv(8): Verilog Compiler exiting
+# End time: 14:15:03 on Jan 09,2026, Elapsed time: 0:00:00
+# Errors: 24, Warnings: 0
+# ** Error: C:/questasim64_2024.1/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_2024.1/win64/vlog failed.
+#     while executing
+# "vlog list.svh"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 14:17:05 on Jan 09,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling package list_svh_unit
+# ** Warning: wr_gen.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: rd_gen.sv(36): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module tb
+# ** Warning: fifo_tb.sv(6): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+# 
+# Top level modules:
+# 	tb
+# End time: 14:17:05 on Jan 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# End time: 14:17:06 on Jan 09,2026, Elapsed time: 0:19:18
+# Errors: 1, Warnings: 2
+# vsim -vopt -suppress 12110 tb "+test_name=FULL" 
+# Start time: 14:17:07 on Jan 09,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: wr_gen.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: rd_gen.sv(36): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_tb.sv(6): (vopt-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.tb(fast)
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 142
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  36
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 195
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 196
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 119
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  83
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  98
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  79
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 207
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  23
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 168
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  88
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  55
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 161
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  =  95
+# full = 0
+# overflow = 0
+# ---------------wr-gen-----------------
+# wr_en = 1
+# wdata  = 242
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 142
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  36
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 195
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 196
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 119
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  83
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  98
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  79
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 207
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  23
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 168
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  88
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  55
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 161
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  =  95
+# full = 0
+# overflow = 0
+# ---------------wr-bfm-----------------
+# wr_en = 1
+# wdata  = 242
+# full = 0
+# overflow = 0

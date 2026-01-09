@@ -6,6 +6,7 @@
 class fifo_common;
 
        static string test_name;
-       static mailbox wr_gen2bfm = new(); 
+       static mailbox wr_gen2bfm=new(); 
+       static mailbox rd_gen2bfm=new(); 
 
 endclass
